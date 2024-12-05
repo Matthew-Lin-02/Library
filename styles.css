@@ -1,0 +1,85 @@
+:root {
+    --blue: #1992d4;
+    --grey: #e2e8f0;
+    --white: #ffffff;
+    --yellow: #f0b429;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.header {
+    text-align: center;
+}
+
+.center-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+
+    display: grid;
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(3, 250px);
+
+    gap: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: lightgray;
+    text-align: center;
+    align-content: center;
+}
+
+.layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+
+}
+
+.sidebar {
+
+    background-color: var(--blue);
+
+}
+
+.main {
+    padding: 100px;
+}
+
+.dialog-wrapper {
+    padding-top: 200px;
+    display: grid;
+    grid-template-rows: 50px;
+}
+
+::backdrop {
+    background-image: linear-gradient(45deg,
+            magenta,
+            rebeccapurple,
+            dodgerblue,
+            green);
+    opacity: 0.75;
+}
+
+
+
+dialog {
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
